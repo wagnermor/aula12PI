@@ -10,7 +10,7 @@ function encontrarGanhador(a, b) {
     for (let i = 0; i < alicia.length; i += 1) {
       if (a[i] > b[i]) pontosAlicia++;
       if (a[i] < b[i]) pontosBob++;
-      if (a[i] === b[i]) (pontosBob++), (pontosAlicia++);
+      //if (a[i] === b[i]) (pontosBob++), (pontosAlicia++); ==> O requisito para empate é que ninguém pontua. Gostei dessa sítaxe se separar o retorno do if por vírgula.
     }
   }
 
